@@ -2,7 +2,9 @@ package br.com.etecia.myapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -16,9 +18,11 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.zip.Inflater;
+
 public class RecuperarSenha_Activity extends AppCompatActivity {
     MaterialToolbar idRecRetorno;
-    FloatingActionButton idFABBikeDoacao;
+    FloatingActionButton btnLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +41,17 @@ public class RecuperarSenha_Activity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Login_Activity.class));
             }
         });
+        btnLink = findViewById(R.id.btnEnviarLink);
 
-            idFABBikeDoacao = findViewById(R.id.btnRecuperarSenha);
-            idFABBikeDoacao.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Toast.makeText(getApplicationContext(),
-                            "Link enviado para seu email \n cheque sua caixa de entrada", Toast.LENGTH_SHORT).show();
-                }
-            });
-            return view;
+        btnLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getBaseContext(),"Link Enviado com Sucesso! \n Cheque sua caixa de entrada",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
+
         }
     }
