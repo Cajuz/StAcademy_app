@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RecuperarSenha_Activity"
-    android:background="#34FFA0A0">
+    android:background="#000000">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -18,11 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
-            app:title="Recupere sua Senha"
+            app:title="Recupere sua senha"
             app:titleCentered="true"
-            app:titleTextColor="#432101"
+            app:titleTextColor="#FFFFFF"
             app:navigationIcon="@drawable/baseline_arrow_back"
-            android:background="#34FFA0A0"/>
+            android:background="#000000"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,7 +33,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/slogan" />
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:gravity="center_horizontal"
         android:text="Digite seu email abaixo \n
         e envie o link para conseguir trocar sua senha"
-        android:textColor="#730505"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
         android:layout_marginTop="20dp"
         android:text="Enviar Link"
         app:cornerRadius="20dp"
-        app:backgroundTint="#906B6B"/>
+        app:backgroundTint="#08136A"/>
 
 
 </LinearLayout>

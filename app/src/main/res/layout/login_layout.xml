@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    android:background="#34FFA0A0"
+    android:background="#000000"
     android:orientation="vertical"
     tools:context=".Login_Activity">
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/slogan" />
+        android:src="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -26,13 +26,15 @@
         android:hint="Insira seu e-mail"
         app:endIconMode="clear_text"
         app:startIconContentDescription="email"
-        app:startIconDrawable="@drawable/baseline_person">
+        app:startIconDrawable="@drawable/baseline_person"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -42,18 +44,22 @@
         android:hint="Insira sua senha"
         app:endIconMode="password_toggle"
         app:startIconContentDescription="senha"
-        app:startIconDrawable="@drawable/baseline_lock">
+        app:startIconDrawable="@drawable/baseline_lock"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        >
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRecuperarSenha"
@@ -73,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Entrar"
-        app:backgroundTint="#906B6B"
+        app:backgroundTint="#03207A"
         app:cornerRadius="20dp" />
 
 </LinearLayout>
